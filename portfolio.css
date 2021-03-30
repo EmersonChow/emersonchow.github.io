@@ -1,0 +1,61 @@
+/*https://stackoverflow.com/questions/31482921/make-text-in-bootsrap-navbar-responsive
+for suggestion to use vmin*/
+.myName{
+    font-size: 5vmin;
+    font-family: 'Potta One', cursive, fantasy, sans-serif;
+    color: rgba(0, 20, 197, 0.692);
+    display:inline-block;
+    text-align: center;
+}
+
+.navbar{
+    background-color: burlywood;
+}
+
+.professionalLinks{
+    font-size: 3.5vmin;
+    color: rgba(0, 20, 197, 0.692);
+
+}
+
+body{
+    background-color:honeydew;
+}
+
+#myPicture{
+    width: 30%;
+    padding: 1%;
+    float: right;
+}
+
+p{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 120%;
+    padding-left: 1%;
+}
+
+h1{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 1%;
+
+}
+
+footer {
+    text-align: center;
+    font-size: 150%;
+    padding: 1%;
+    background-color: burlywood;
+    color: rgba(0, 20, 197, 0.692);
+  }
+
+form{
+    padding: 20%;
+    font-size: 150%;
+    
+}
+
+#reasonForContact{
+    padding: 10%;
+}
+

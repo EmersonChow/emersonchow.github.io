@@ -22,28 +22,42 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
+    -Links to external pages: LinkedIn and Github
+    -At least one image: Personal image 
+    -Semantic HTML tags: aside is used for image 
+    -Appropriate headings and paragraph text: headings and paragraphs used - probably appropriate 
+    -Multiple pages with navigation: Table sends to other pages, top link returns to index
 
 
 (b) CSS features
-
+    -custom Google Font used
+    -Changed background colors
+    -Padding and margins used - primarily with help from bootstrap but a few individual choices
 
 
 (c) Advanced features
-
+    -technically bootstrap nav being used for the header and it is used as a nav tool to index
+    -better example is table with multiple columns and rows to show projects
+    -contact form
 
 
 3. How long, in hours, did it take you to complete this assignment?
-
+~12 hours with research and testing
 
 
 4. What online resources did you consult when completing this assignment? (list specific URLs)
-
-
+https://stackoverflow.com/questions/31482921/make-text-in-bootsrap-navbar-responsive
+getbootstrap.com - various links within this domain
+https://www.w3schools.com/tags/tag_aside.asp - various links aside from this one 
+https://css-tricks.com/styling-underlines-web/
+https://html.com/tags/u/
 
 5. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
-
+None
 
 6. Is there anything special we need to know in order to run your code?
-
+Access to internet would be nice - several online links in use - google fonts, github, linkedin
+Additions: 
+There are downloadable pdfs
+"External link" -> another index.html written for another class - In4matx 124.
+Note: for some reason, half of the pages on UsedCarSales doesn't load - no time to figure it out, perhaps later when I have more free time.

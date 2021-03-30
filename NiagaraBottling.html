@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Emerson Chow
+EMAIL: Emersoc@uci.edu
+-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Emerson Chow">
+    <meta name="description" content="A brief portfolio describing myself.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Emerson Chow's Portfolio</title>
+    <!--Bootstrap CSS from getbootstrap.com-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Loading fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <!--Loading mine after so it overrides bootstrap styling-->
+    <link rel="stylesheet" href="portfolio.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm justify-content-center">
+    
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link professionalLinks" href="https://github.com/EmersonChow"><em>Github</em> <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <a class="navbar-text myName" href = "index.html">
+        <em>Emerson Chow</em>
+      </a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link professionalLinks" href="https://www.linkedin.com/in/emersonchow"><em>LinkedIn</em> <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </nav>
+    <h1>
+      <u>Niagara Bottling: Transfering data from one database to another</u>
+    </h1> 
+    <p>
+        Integration of ChangeGear (IT service manager) and PDQ (systems management tool) Sending data from one database to another and clearing bad inputs.
+        <br> <br>
+        Secondary program: Delete Garbage clears bad inputs left in ChangeGear.
+        <br><br>
+        Original Approach: CSV file transfer information
+        <br><br>
+        Secondary Approach: Use Oracle's Integration Cloud (OIC) to perform integration based on a timed basis (Rejected by department managers due to perceived time constraints)
+        <br><br>
+        Final Approach - uses 3 csv files for data and calls the changegear api to upload the info to the database. Csv files need to be "manually" acquired through SQL scripts & powershell scripts - some of which is included here.
+        <br><br>
+        Manual entry: 6min 48s/item integration speed: 11s/item time savings: 6min 37s/item Current item count: 3298 Estimated savings ~363 hours, 40min, 7.06 seconds/run (future runs should be faster for both the manual integration as well as the automated approach - manual inputter knows more and automated doesn't have to input all information, just check if it is touched.)
+        <br><br>
+        Code Written during: June 2020-August 2020
+        <br><br>
+        The code and more details is public on my Github. Click the top left link to learn more!
+    </p>
+    <footer>
+      <a href="contact.html"> Contact Me</a>
+    </footer>
+  </body>
+
+
+
+</html>
