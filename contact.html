@@ -1,10 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<!--
-WRITTEN BY: Emerson Chow
-EMAIL: Emersoc@uci.edu
--->
 
   <head>
     <meta charset="utf-8">
@@ -20,6 +16,7 @@ EMAIL: Emersoc@uci.edu
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <!--Loading mine after so it overrides bootstrap styling-->
     <link rel="stylesheet" href="portfolio.css">
+
   </head>
   <body>
     <nav class="navbar navbar-expand-sm justify-content-center">
@@ -39,19 +36,23 @@ EMAIL: Emersoc@uci.edu
       </ul>
     </nav>
       <!--template from https://getbootstrap.com/docs/4.0/components/forms/-->
-    <form>
+    <form action="mailto:EmersonChow@gmail.com?subject=Contact%20from%20Portfolio" method = "post" enctype="text/plain">
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone else.</small>
+          
+          <label for="YourName">Name</label>
+          <input type="text" name = "Hi my name is " class="form-control" id="YourName" placeholder="Enter name">
+          
         </div>
         <div class="form-group">
           <label for="reasonForContact">Reason for contact</label>
-          <input type="text" class="form-control" id="reasonForContact">
+          <input type="text" name = "I am contacting you because " class="form-control" aria-describedby="emailHelp" id="reasonForContact">
+          <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone else.</small>
+          
         </div>
         
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Clear Form" />
+    </form>
   </body>
 
 </html>
