@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Emerson Chow">
+    <meta name="description" content="A brief portfolio describing myself.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Emerson Chow's Portfolio</title>
+    <!--Bootstrap CSS from getbootstrap.com-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Loading fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <!--Loading mine after so it overrides bootstrap styling-->
+    <link rel="stylesheet" href="../portfolio.css">
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-sm justify-content-center">
+    
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link professionalLinks" href="https://github.com/EmersonChow"><em>Github</em> <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <a class="navbar-text myName" href = "../index.html">
+        <em>Emerson Chow</em>
+      </a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link professionalLinks" href="https://www.linkedin.com/in/emersonchow"><em>LinkedIn</em> <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </nav>
+    <h1>
+      <u>Web Crawler</u>
+    </h1> 
+    <p>
+        This was a project for In4matx 141- Information Retrieval at UCI. 
+        <br><br>
+        In this project, some files 
+        are given with the main task being extracting future url links 
+        to crawl through as well as validating them to not be traps. The requirements can be found <a href="../resources/WebCrawler/Assignment2Description.pdf" download=In4matx141ProjectRequirements1>here</a>. 
+        <br>
+        In this part, we are given a base website and a set of links. We crawl through the base website for external links and if the 
+        link is in that given set, we crawl through those as well. Along the way, we save some analytics metrics such as the most common set of words
+        excluding stop words. Perhaps the most interesting part is filtering out traps - we removed non html links, non .ics.uci.edu links, addresses
+        longer than 100 characters, and links that were found to often in our recent history. These were chosen to stop infinite loops and to remain within
+        the set of links given.
+        
+        <br>
+        <br>
+        This project was then extended with the ability to extract the most relevant links based on a given corpus (what was found above).
+        The purpose of this is to build a search engine of sorts.
+        The next set of requirements are 
+        <a href= "../resources/WebCrawler/Project_3_SearchEngineProject.pdf" download = In4matx141ProjectRequirements2>here</a>. 
+        In this part, a corpus is given to us along with a json file to connect files to links. This is to model the results from part 1.
+        Here we built an inverted index, storing data in json files starting with the starting character of each word to shorten the search speed.
+        To find relevance, we lemmatized words and changed numbers to word form. Then we retrieved the files containing the searched for term and 
+        used cosine similarity to find best fits.
+        <br>
+        <br>
+        All this code can be found <a href = "https://github.com/EmersonChow/webCrawler141">here</a>.
+    </p>
+    <footer>
+      <a href="../contact.html"> Contact Me</a>
+    </footer>
+  </body>
+</html>

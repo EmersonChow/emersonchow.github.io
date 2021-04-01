@@ -1,11 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<!--
-WRITTEN BY: Emerson Chow
-EMAIL: Emersoc@uci.edu
--->
-
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Emerson Chow">
@@ -19,8 +14,9 @@ EMAIL: Emersoc@uci.edu
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <!--Loading mine after so it overrides bootstrap styling-->
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="../portfolio.css">
   </head>
+
   <body>
     <nav class="navbar navbar-expand-sm justify-content-center">
     
@@ -29,7 +25,7 @@ EMAIL: Emersoc@uci.edu
           <a class="nav-link professionalLinks" href="https://github.com/EmersonChow"><em>Github</em> <span class="sr-only">(current)</span></a>
         </li>
       </ul>
-      <a class="navbar-text myName" href = "index.html">
+      <a class="navbar-text myName" href = "../index.html">
         <em>Emerson Chow</em>
       </a>
       <ul class="navbar-nav ml-auto">
@@ -39,18 +35,30 @@ EMAIL: Emersoc@uci.edu
       </ul>
     </nav>
     <h1>
-      <u>Ingram Micro: Build an elasticsearch tool for realtime package tracking</u>
+      <u>Niagara Bottling: Transfering data from one database to another</u>
     </h1> 
     <p>
-        This is an ongoing project that I am working on with a group of 4 other students. We are working with Ingram Micro to develop a tool using elasticsearch
-        to help them track packages in near real time as they make their way through their warehouses. It will ingest data 
-        from both Ingram's own systems as well as their other vendor's systems and generate a searchable database that customer service
-        representatives can use to find packages and relay information to clients. Time permitting, we will also implement an API to handle
-        the calling aspect. The program is scheduled to be written in Python and development will be taking place during the next 7 weeks.
+        Integration of ChangeGear (IT service manager) and PDQ (systems management tool) Sending data from one database to another and clearing bad inputs.
+        <br> <br>
+        Secondary program: Delete Garbage clears bad inputs left in ChangeGear.
+        <br><br>
+        Original Approach: CSV file transfer information
+        <br><br>
+        Secondary Approach: Use Oracle's Integration Cloud (OIC) to perform integration based on a timed basis (Rejected by department managers due to perceived time constraints)
+        <br><br>
+        Final Approach - uses 3 csv files for data and calls the changegear api to upload the info to the database. Csv files need to be "manually" acquired through SQL scripts & powershell scripts - some of which is included here.
+        <br><br>
+        Manual entry: 6min 48s/item integration speed: 11s/item time savings: 6min 37s/item Current item count: 3298 Estimated savings ~363 hours, 40min, 7.06 seconds/run (future runs should be faster for both the manual integration as well as the automated approach - manual inputter knows more and automated doesn't have to input all information, just check if it is touched.)
+        <br><br>
+        Code Written during: June 2020-August 2020
+        <br><br>
+        The code and more details is public on my Github. Click <a href="https://github.com/EmersonChow/Niagara-Internship-2020-Project">here</a> to learn more!
     </p>
     <footer>
-      <a href="contact.html"> Contact Me</a>
+      <a href="../contact.html"> Contact Me</a>
     </footer>
   </body>
+
+
 
 </html>

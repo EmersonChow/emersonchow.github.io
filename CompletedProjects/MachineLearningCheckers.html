@@ -1,10 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<!--
-WRITTEN BY: Emerson Chow
-EMAIL: Emersoc@uci.edu
--->
 
   <head>
     <meta charset="utf-8">
@@ -19,9 +15,8 @@ EMAIL: Emersoc@uci.edu
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <!--Loading mine after so it overrides bootstrap styling-->
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="../portfolio.css">
   </head>
-
   <body>
     <nav class="navbar navbar-expand-sm justify-content-center">
     
@@ -30,7 +25,7 @@ EMAIL: Emersoc@uci.edu
           <a class="nav-link professionalLinks" href="https://github.com/EmersonChow"><em>Github</em> <span class="sr-only">(current)</span></a>
         </li>
       </ul>
-      <a class="navbar-text myName" href = "index.html">
+      <a class="navbar-text myName" href = "../index.html">
         <em>Emerson Chow</em>
       </a>
       <ul class="navbar-nav ml-auto">
@@ -40,15 +35,17 @@ EMAIL: Emersoc@uci.edu
       </ul>
     </nav>
     <h1>
-      <u>Visual Novel</u>
+      <u>Machine Learning Checkers</u>
     </h1> 
     <p>
-        This is an ongoing project for In4matx 151 - Project Management. In this project, I am working with 4 other group members to plan 
-        and ultimately create a visual novel depiciting a type of orientation for UCI students. We are planning on using the Ren'py game engine
-        to build this game and the timeline for this project is to be completed within the next 7 weeks.
+        This is a completed project written between October 2020 and December 2020. In this project, a pre-written checkers game setup was created. This 
+        includes game logic, board generation, and several other aspects. My part in the project was working with one other student to create a 
+        machine learning system to predict the best move to make. For this, we used the Monte Carlo Tree Search technique bolstered by the All Moves-As-First heuristic.
+        After testing and considering the time constraints per move, we settled on 850 simulations per turn with safeguards in place for time. This combination
+        created a passable AI. The entire project was written in Python. The code can be found <a href = "https://github.com/EmersonChow/machineLearningCheckers">here</a>.
     </p>
     <footer>
-      <a href="contact.html"> Contact Me</a>
+      <a href="../contact.html"> Contact Me</a>
     </footer>
   </body>
 </html>
