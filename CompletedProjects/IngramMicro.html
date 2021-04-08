@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <!--Loading mine after so it overrides bootstrap styling-->
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="../portfolio.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-sm justify-content-center">
@@ -25,7 +25,7 @@
           <a class="nav-link professionalLinks" href="https://github.com/EmersonChow"><em>Github</em> <span class="sr-only">(current)</span></a>
         </li>
       </ul>
-      <a class="navbar-text myName" href = "index.html">
+      <a class="navbar-text myName" href = "../index.html">
         <em>Emerson Chow</em>
       </a>
       <ul class="navbar-nav ml-auto">
@@ -38,12 +38,17 @@
       <u>Ingram Micro: Build an elasticsearch tool for realtime package tracking</u>
     </h1> 
     <p>
-        This is an ongoing project that I am working on with a group of 4 other students. We are working with Ingram Micro to develop a tool using elasticsearch
-        to help them track packages in near real time as they make their way through their warehouses. It will ingest data 
-        from both Ingram's own systems as well as their other vendor's systems and generate a searchable database that customer service
-        representatives can use to find packages and relay information to clients. Time permitting, we will also implement an API to handle
-        the calling aspect. The program is scheduled to be written in Python and development will be taking place during the next 7 weeks.
+        This is a completed project that I am worked on with a group of 4 other students. We worked with Ingram Micro to develop a tool using elasticsearch
+        to help them track packages in near real time as they make their way through their warehouses. It ingested data via 
+        a series of CSV files to generate an elasticsearch database that customer service
+        representatives can use to find packages and relay information to clients. 
+        The application was written in Python using flask. Unfortunately, the code is not publicly available. 
     </p>
+    <div class = "text-center">
+      <img src = "../images/IngramMicroSample.jpg" class = "img-fluid" width = 70% height = 80% alt = "Picture of application frontend">
+    </div>
+    <br>
+    <br>
     <footer>
       <a href="../contact.html"> Contact Me</a>
     </footer>
